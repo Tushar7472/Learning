@@ -1,0 +1,56 @@
+
+<div class="search-container">
+<span class="search-label"> Search Asset </span>
+
+<div class="search-bar" >
+
+<sly data-sly-resource="${ '/libs/granite/ui/components/coral/foundation/form/pathfield' @ resourceType='granite/ui/components/coral/foundation/form/pathfield'}" />
+
+</div>
+<div>
+<button class="findReference">Find References</button>
+</div>
+</div>
+
+<div class="reponse-container">
+	<div class="reponse-body"></div>
+</div>
+
+<script id="handle-data" type="text/x-handlebars-template">
+	<div class="seleced-info">
+        <div>
+            <h2>Selected Asset:</h2>
+            <p>{{assetPath}}</p>
+        </div>
+    </div>
+
+    <table border="1">
+        <thead>
+            <th>
+                Content Fragment References
+            </th>
+            <th>
+                Page References
+            </th>
+            <th>
+                Other References
+            </th>
+        </thead>
+        <tbody>
+			{{#times}}
+                <tr>
+                    <td>
+                        <a href="http://localhost:4502/editor.html{{getByIndex ../cfReference index}}">{{getByIndex ../cfReference index}}</a>
+                    </td>
+                     <td>
+                     	<a href="{{getByIndex ../pageReference index}}.html">{{getByIndex ../pageReference index}}</a>
+                     </td>
+                     <td>
+                     	{{getByIndex ../otherReference index}}
+                     </td>
+                </tr>
+            {{/times}}
+        </tbody>
+     </table>   
+</script>
+

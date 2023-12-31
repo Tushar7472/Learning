@@ -1,0 +1,54 @@
+ <div class="custom-form coral-Form coral-Form--horizontal">
+    <coral-form-field>
+      <label class="coral-Form-field-label" for="toolName">Tool Name</label>
+      <input is="coral-textfield" placeholder="Enter Tool Name" name="toolName" value="" id="toolName"  autocomplete="off" >
+    </coral-form-field>
+
+    <coral-form-field>
+      <label class="coral-Form-field-label" for="categoryName">Category Name</label>
+      <input is="coral-textfield" id="categoryName" name="categoryName" placeholder="Enter Category Name" list="toolCategory" autocomplete="off">
+
+    <datalist id="toolCategory">
+    </datalist>
+
+
+    </coral-form-field>
+
+    <coral-form-field>
+      <label class="coral-Form-field-label" for="iconName">Icon Name</label>
+      <input is="coral-textfield" id="iconName" name="iconName" placeholder="Enter Icon Name" autocomplete="off">
+      <label class="coral-Form-field-label info" for="info">Not know the icon name 
+      <a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html" target="_blank">here</a>
+		you can find the name.
+      </label> 
+    </coral-form-field>
+
+    <coral-form-field>
+      <label class="coral-Form-field-label" for="description">Description</label>
+      <input is="coral-textfield" id="description" name="description" placeholder="Enter Description"  autocomplete="off">
+    </coral-form-field>
+
+    <coral-form-field>
+      <label class="coral-Form-field-label" for="pagePath">Page Path</label>
+      <coral-select is="coral-select" id="pagePath" name="pagePath">
+        <coral-select-item value="/apps">Apps</coral-select-item>
+        <coral-select-item value="/content">Content</coral-select-item>
+      </coral-select>
+    </coral-form-field>
+
+    <coral-form-field>
+      <label class="coral-Form-field-label" for="componentName">Component Name</label>
+      <input is="coral-textfield" id="componentName" name="componentName" placeholder="Component Name" autocomplete="off">
+    </coral-form-field>
+
+    <coral-form-field>
+      <label class="coral-Form-field-label" for="componentPath">Component Path</label>
+     <sly data-sly-resource="${ '/libs/granite/ui/components/coral/foundation/form/pathfield' @ resourceType='granite/ui/components/coral/foundation/form/pathfield'}" />
+    </coral-form-field>
+
+    <coral-form-field>
+    <button is="coral-button" class="coral-Form-field" variant="primary" id="create">Create Tool</button>
+    </coral-form-field>
+
+</div>
+  </div>

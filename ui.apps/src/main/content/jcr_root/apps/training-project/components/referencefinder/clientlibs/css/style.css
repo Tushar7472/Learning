@@ -1,0 +1,61 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 10px;\
+}
+
+
+    .search-label {
+ font-size: 1.2rem;
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px 10px 10px 10px;\
+}
+
+.search-bar {
+    margin: 10px 10px 10px 10px;\
+}
+            .findReference {
+                color: white;
+    transform: translateZ(10px);
+    font-size: larger;
+    height: 33px;
+    width: 120px;
+    background-color: #0096FF;
+    border-radius: 7px;
+    border: 2px solid black;
+                }
+
+.reponse-body {
+    margin: 10px 10px 10px 10px;
+}
+
+.reponse-container {
+    display:flex;
+    justify-content: center;
+
+
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+
+.error{
+color:red;
+    border: 1px solid red;
+}
+
+.vibrate{
+animation : vibrate 0.5s linear infinite;}
+

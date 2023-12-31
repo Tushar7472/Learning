@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <core jcr:primaryType="nt:unstructured">
+        <content jcr:primaryType="nt:unstructured">
+            <nav jcr:primaryType="nt:unstructured">
+                <tools jcr:primaryType="nt:unstructured">
+                    <custom-tools
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="custom-tools">
+                        <referenceFinder
+                            jcr:description="Refernce Finder"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Reference Finder"
+                            href="/apps/custom-tool/reference-finder.html"
+                            icon="coverImage"
+                            id="reference-finder-tool"/>
+                        <CustomToolCreator
+                            jcr:description="A tool which help to create custom tool"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="CustomToolCreator"
+                            href="/apps/custom-tool/CustomToolCreator.html"
+                            icon="coverImage"
+                            id="CustomToolCreator-tool"/>
+                    </custom-tools>
+                </tools>
+            </nav>
+        </content>
+    </core>
+</jcr:root>
